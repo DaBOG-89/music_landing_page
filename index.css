@@ -32,7 +32,6 @@ main {
 }
 
 img {
-    
     border-radius: 50%;
     aspect-ratio: 1/1;
     width: 350px;
@@ -45,4 +44,20 @@ img {
 button {
     padding: 5px 10px;
     margin: 0px 10px;
+}
+
+@media (max-width:600px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        flex-direction: column;
+        margin: 40px 50px;
+    }
+
+    .button {
+        margin: 20px 0px;
+    }
 }
