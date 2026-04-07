@@ -25,6 +25,9 @@ ul {
 }
 
 @media (max-width:600px) {
+    body {
+        text-align: left;
+    }
     .container {
         margin: 0px 20px;
     }
