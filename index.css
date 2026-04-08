@@ -59,6 +59,10 @@ button {
 }
 
 @media (max-width:512px) {
+    body {
+        text-align: center;
+    }
+
     header {
         flex-direction: column;
         gap: 10px;
@@ -70,7 +74,7 @@ button {
 
     main {
         flex-direction: column;
-        margin: 40px 20px;
+        margin: 40px 10px;
     }
 
     .button {

@@ -20,7 +20,7 @@ header {
 
 .header-ul {
     display: inline-flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .header-ul > li {
