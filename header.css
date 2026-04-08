@@ -18,12 +18,12 @@ header {
     display: none;
 }
 
-ul {
+.header-ul {
     display: inline-flex;
     gap: 20px;
 }
 
-li {
+.header-ul > li {
     list-style-type: none;  
 }
 

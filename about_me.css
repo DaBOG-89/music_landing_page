@@ -8,6 +8,10 @@ body {
     text-align: justify;
 }
 
+#header {
+    background: white;
+}
+
 .container {
     background-color: rgb(250, 249, 248);
     margin: 0px 200px;

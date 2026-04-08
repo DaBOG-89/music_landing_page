@@ -1,3 +1,12 @@
+<div id="header"></div>
+
+<script>
+  fetch("header.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
+</script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,6 +83,9 @@
                     <li>Music Theory</li>
                 </ul>
                 Music theory may also be integrated into the school’s formal academic structure if desired.
+            </p>
+            <p>
+                Here is the link to the <a href="https://dabog-89.github.io/music_blueprint">blueprint/curriculum</a>
             </p>
         </div>
         <div>

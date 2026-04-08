@@ -8,8 +8,8 @@ body {
     text-align: justify;
 }
 
-embed {
-    padding: 0px 100px;
+#header {
+    background: white;
 }
 
 .container {
