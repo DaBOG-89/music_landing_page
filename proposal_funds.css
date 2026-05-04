@@ -11,7 +11,6 @@ body {
 
 #header {
     background: white;
-    margin: 0;
     position: sticky;
     top: 0;
 }
@@ -23,8 +22,14 @@ body {
 
 div {
     background-color: rgb(236, 234, 221);
+    border-radius: 5px;
     margin: 2px 50px;
     padding: 5px 10px;
+}
+
+td {
+    padding: 0px 10px;
+    text-align: center;
 }
 
 ul {
@@ -32,11 +37,18 @@ ul {
 }
 
 @media (max-width:600px) {
+    body{
+        text-align: left;
+    }
     .container {
         margin: 0px 10px;
     }
 
     div {
         margin: 2px 10px;
+    }
+
+    td {
+        padding: 0;
     }
 }

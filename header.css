@@ -4,6 +4,7 @@
 }
 
 body {
+    background-color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -20,7 +21,7 @@ header {
 
 .header-ul {
     display: inline-flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .header-ul > li {
@@ -29,7 +30,7 @@ header {
 
 a {
     text-decoration: none;
-     border-bottom: 2px solid black;
+    border-bottom: 2px solid black;
     color: black;
 }
 

@@ -8,12 +8,12 @@
 </head>
 <body>
     <header>
-        <h1>DaBOG's Music</h1>
+        <h1>DaBOG's Music Academy</h1>
         <nav>
             <ul>
                 <li><a href="about_me.html">About me</a></li>
                 <!-- <li><a href="https://dabog-89.github.io/music_blueprint/">Music Blueprint</a></li> -->
-                <li><a href="proposal.html">Proposal</a></li>
+                <li><a href="proposals.html">Proposal</a></li>
                 <li><a href="services.html">Services</a></li>
             </ul>
         </nav>
@@ -30,23 +30,40 @@
 
     <div class="button">
         <P>
-            Hoping to hear from you...<button type="button" onclick="contact()" id="contacts" style="cursor: pointer;">Contacts</button> 
+            Hoping to hear from you...<button type="button" onclick="contact()" id="contacts">Contacts</button> 
             <br>
             <a onclick="musicSchool()" id="school"><em>...Visit our music school...</em></a>
         </P>
+    </div>
+
+    <div class="contacts">
+        <p>
+            This link is meant to land on my whatsapp but my phone is currently faulty. 
+            Kindly send your messages/reqests to: <br> <b>email:</b> adesolababaniji@gmail.com <br> or send me a DM on <br>
+            <b>facebook:</b> Adesola Babaniji <br> <b>linkedin:</b> Adesola Babaniji
+        </p>
     </div>
 </body>
 <script>
     // function contact() {
     //     window.location.href = "this should be a link to my whatsApp";
     // }
+    let contacts = document.querySelector(".contacts");
     
     function contact() {
         let contactBtn = document.querySelector("#contacts");
-        if(contactBtn.innerHTML == "Contacts") {
+        if (contactBtn.innerHTML == "Contacts") {
             contactBtn.innerHTML = "0816-792-9789";
-        }else{
+            setTimeout(() => {
+                contacts.style.display = "block";
+            }, 500);
+            setTimeout(() => {
+                contacts.style.display = "none";
+                contactBtn.innerHTML = "Contacts";
+            }, 10000);
+        } else {
             contactBtn.innerHTML = "Contacts";
+            contacts.style.display = "none";
         }
     }
 

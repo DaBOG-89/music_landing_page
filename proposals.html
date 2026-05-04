@@ -1,0 +1,31 @@
+<div id="header"></div>
+
+<script>
+  fetch("header.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proposals.css">
+    <title>Services</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1><a href="proposal_to_institutions.html">Proposal to Institutions</a></h1>
+        </div>
+        <div>
+            <h1><a href="proposal_to_parents.html">Invite to Parents</a></h1>
+        </div>
+        <div>
+            <h1><a href="proposal_funds.html">Appeal for Funds</a></h1>
+        </div>
+    </div>
+</body>
+</html>

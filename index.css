@@ -4,13 +4,14 @@
 }
 
 body {
+    background-color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
     margin: 15px 20px;
     display: flex;
-    gap: 300px;
+    gap: 150px;
     align-items: center;
 }
 
@@ -56,6 +57,22 @@ img {
 button {
     padding: 5px 10px;
     margin: 0px 5px;
+    cursor: pointer;
+}
+
+.contacts {
+    border: 2px solid black;
+    background: white;
+    width: 350px;
+    margin: auto;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    bottom: 200px;
+    left: 350px;
+    display: none;
 }
 
 @media (max-width:512px) {
@@ -79,5 +96,11 @@ button {
 
     .button {
         margin: 30px 0px;
+    }
+
+    .contacts {
+        bottom: 250px;
+        left: 0px;
+        background: white;
     }
 }
